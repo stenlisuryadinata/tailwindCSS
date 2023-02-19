@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwarden Tailwind</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-openSans">
+    <!-- Navbar -->
+    <nav
+      class="py-6 px-8 md:px-24 flex flex-row justify-between items-center bg-blue-main text-white"
+    >
+      <div class="flex flex-row items-center space-x-8 text-lg">
+        <a href="#" class="hover:text-gray-200 text-2xl"><b>bit</b>warden</a>
+        <div
+          class="hidden md:flex flex-row items-center md:space-x-4 lg:space-x-8"
+        >
+          <a href="#" class="hover:text-gray-200">Product</a>
+          <a href="#" class="hover:text-gray-200">Download</a>
+          <a href="#" class="hover:text-gray-200">Pricing</a>
+          <a href="#" class="hover:text-gray-200">Help</a>
+          <a href="#" class="hover:text-gray-200">Blog</a>
+          <a href="#" class="hover:text-gray-200">Contact</a>
+        </div>
+      </div>
+
+      <!-- Mobile Button -->
+      <button
+        class="md:hidden inline-block hover:bg-blue-700 px-4 py-2 border border-white rounded"
+      >
+        Menu
+      </button>
+      <div class="md:flex flex-row md:space-x-4 lg:space-x-8 text-lg hidden">
+        <a href="#" class="hover:text-gray-200 font-bold">Get Started</a>
+        <a href="#" class="hover:text-gray-200">Log In</a>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col items-center md:flex-row px-8 py-2 md:p-24 space-x-4 bg-shape bg-blue-main text-white"
+      >
+        <div class="w-full md:w-1/2">
+          <p class="mb-2 md:mb-6 text-xl md:text-3xl font-semibold">
+            Open Source Password Management for You and Your Business
+          </p>
+          <p class="mb-4 md:mb-8 text-lg md:text-2xl font-light">
+            The easiest and safest way for individuals and businesses to store,
+            share, and secure sensitive data on any device
+          </p>
+          <div class="mb-8">
+            <button
+              class="px-4 py-2 mr-4 bg-white hover:bg-gray-200 text-gray-900 text-lg md:text-xl rounded shadow-lg"
+            >
+              Create Your Free Account
+            </button>
+            <button
+              class="px-4 py-2 border hover:bg-blue-700 border-white ext-lg md:text-xl rounded shadow-lg"
+            >
+              About Our Product
+            </button>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Gambar masuk disini -->
+          <img src="./assets/hero.png" alt="hero" />
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="flex flex-col items-center px-24 py-16">
+        <p class="text-3xl">Why Choose Bitwarden as Your Password Manager?</p>
+        <div class="flex flex-row justify-between mt-8">
+          <div class="px-8 flex flex-col items-center text-center">
+            <img
+              src="./assets/home-security-icon.png"
+              alt="security"
+              class="w-24"
+            />
+            <p class="text-xl font-semibold my-4">Security You Can Trust</p>
+            <p class="text-lg">
+              Our Bitwarden application seals your private information with
+              end-to-end encryption before it ever leaves your devices.
+            </p>
+          </div>
+          <div class="px-8 flex flex-col items-center text-center">
+            <img
+              src="./assets/home-open-source-icon.png"
+              alt="security"
+              class="w-24"
+            />
+            <p class="text-xl font-semibold my-4">Open Source Transparency</p>
+            <p class="text-lg">
+              Our software is open source which means the features and security
+              of our infrastructure can be vetted and improved upon by our
+              global community.
+            </p>
+          </div>
+          <div class="px-8 flex flex-col items-center text-center">
+            <img
+              src="./assets/home-global-icon.png"
+              alt="security"
+              class="w-24"
+            />
+            <p class="text-xl font-semibold my-4">Available Worldwide</p>
+            <p class="text-lg">
+              Our workforce and solutions are globally distributed and provide
+              multi‑platform sensitive data management in nearly 40 different
+              languages.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="mt-8 text-blue-main text-lg"
+          >View Product Details <b> ></b></a
+        >
+      </section>
+
+      <!-- Section 3 -->
+      <section class="bg-blue-50 px-24 py-16 flex flex-col items-center">
+        <div class="flex flex-row justify-between items-center">
+          <div class="w-1/2 flex flex-row justify-center">
+            <img src="./assets/home-safety.png" alt="" class="w-1/2" />
+          </div>
+          <div class="w-1/2">
+            <p class="text-xl font-bold mb-6">Your online safety is at risk</p>
+            <p class="text-lg">
+              Password theft is a serious problem. Your online accounts are
+              consistently under attack which is why strong password security
+              practices have never been more critical.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row-reverse justify-between items-center mt-10">
+          <div class="w-1/2 flex flex-row justify-center">
+            <img src="./assets/connected.png" alt="" class="w-3/5" />
+          </div>
+          <div class="w-1/2">
+            <p class="text-xl font-bold mb-6">
+              Secure Your Passwords From Any Location or Device
+            </p>
+            <p class="text-lg mb-4">
+              The Bitwarden Password Manager helps you create and manage unique
+              passwords so you can strengthen your privacy and boost
+              productivity online from any device or location.
+            </p>
+            <a href="#" class="text-blue-main text-lg"
+              >View Download Option ></a
+            >
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col items-center">
+          <img src="./assets/quote-marks.png" alt="q" class="w-1/3" />
+          <p class="my-8 w-3/5 text-2xl italic text-center text-gray-600">
+            The best solution I found was Bitwarden. Bitwarden is an outstanding
+            password manager that includes all the bells and whistles you've
+            come to expect from such a tool. And because Bitwarden is open
+            source, it updates regularly.
+          </p>
+          <span class="w-1/12 border border-t-2 border-blue-main"></span>
+          <img
+            src="./assets/techrepublic-logo.png"
+            alt="techrepublic-logo"
+            class="w-1/4 mt-8"
+          />
+        </div>
+      </section>
+
+      <!-- Plans Sections -->
+      <section
+        class="pt-10 pb-0 px-24 bg-blue-main text-white flex flex-col items-center"
+      >
+        <p class="text-3xl my-4">Bitwarden Plans and Pricing</p>
+        <div class="mt-8 flex flexro justify-center space-x-4">
+          <a
+            href="#"
+            class="px-8 py-4 font-bold text-xl border hover:bg-blue-700 border-white rounded-t cursor-pointer"
+            >Personal Plans</a
+          >
+          <a
+            href="#"
+            class="px-8 py-4 font-bold text-xl bg-white text-blue-main rounded-t"
+          >
+            Business Plans</a
+          >
+        </div>
+      </section>
+      <!-- Plans Details -->
+      <section class="px-24">
+        <div class="flex flex-row justify-between my-8 space-x-8">
+          <!-- Menu 1 -->
+          <div
+            class="flex flex-col items-center text-center hover:transform hover:scale-105 hover:shadow-lg transition duration-500 group cursor-pointer"
+          >
+            <div
+              class="w-full px-8 py-2 border border-gray-600 bg-blue-navy text-white"
+            >
+              <p class="font-bold text-xl">Free Organization</p>
+            </div>
+            <div class="px-8 py-8 border border-gray-600">
+              <p class="text-2xl font-bold">$0/month</p>
+              <p>includes 2 users</p>
+              <p class="text-xl my-4">
+                Start storing and sharing secure passwords with a two-person
+                organization.
+              </p>
+              <p class="text-sm">
+                The core features and sharing are 100% free. Upgrade anytime.
+              </p>
+            </div>
+            <div
+              class="w-full px-8 py-2 border border-gray-600 bg-gray-100 group-hover:bg-blue-700 group-hover:text-white"
+            >
+              <p class="text-xl">Create Free Organization</p>
+            </div>
+          </div>
+          <!-- Menu 2 -->
+          <div
+            class="flex flex-col items-center text-center hover:transform hover:scale-105 hover:shadow-lg transition duration-500 group cursor-pointer"
+          >
+            <div
+              class="w-full px-8 py-2 border border-gray-600 bg-blue-navy text-white"
+            >
+              <p class="font-bold text-xl">Free Organization</p>
+            </div>
+            <div class="px-8 py-8 border border-gray-600">
+              <p class="text-2xl font-bold">$0/month</p>
+              <p>includes 2 users</p>
+              <p class="text-xl my-4">
+                Start storing and sharing secure passwords with a two-person
+                organization.
+              </p>
+              <p class="text-sm">
+                The core features and sharing are 100% free. Upgrade anytime.
+              </p>
+            </div>
+            <div
+              class="w-full px-8 py-2 border border-gray-600 bg-gray-100 group-hover:bg-blue-700 group-hover:text-white"
+            >
+              <p class="text-xl">Create Free Organization</p>
+            </div>
+          </div>
+          <!-- Menu 3 -->
+          <div
+            class="flex flex-col items-center text-center hover:transform hover:scale-105 hover:shadow-lg transition duration-500 group cursor-pointer"
+          >
+            <div
+              class="w-full px-8 py-2 border border-gray-600 bg-blue-navy text-white"
+            >
+              <p class="font-bold text-xl">Free Organization</p>
+            </div>
+            <div class="px-8 py-8 border border-gray-600">
+              <p class="text-2xl font-bold">$0/month</p>
+              <p>includes 2 users</p>
+              <p class="text-xl my-4">
+                Start storing and sharing secure passwords with a two-person
+                organization.
+              </p>
+              <p class="text-sm">
+                The core features and sharing are 100% free. Upgrade anytime.
+              </p>
+            </div>
+            <div
+              class="w-full px-8 py-2 border border-gray-600 bg-gray-100 group-hover:bg-blue-700 group-hover:text-white"
+            >
+              <p class="text-xl">Create Free Organization</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="block text-blue-main text-lg text-center mb-12"
+          >Compare Features and Pricing ></a
+        >
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-navy text-white px-32 py-16 flex flex-col">
+      <div class="flex flex-row space-x-8 justify-between">
+        <div class="w-1/6">
+          <img src="./assets/logo.svg" alt="logo" class="w-32" />
+        </div>
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl">Products</h2>
+          <a href="#" class="block w-full hover:underline"
+            >How Bitwarden Works</a
+          >
+          <a href="#" class="block w-full hover:underline"
+            >Open Source Software</a
+          >
+          <a href="#" class="block w-full hover:underline"
+            >Security Compliance</a
+          >
+          <a href="#" class="block w-full hover:underline"
+            >Pricing for Business</a
+          >
+          <a href="#" class="block w-full hover:underline"
+            >Pricing for Individuals</a
+          >
+          <a href="#" class="block w-full hover:underline">Download Options</a>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl">Company</h2>
+          <a href="#" class="block w-full hover:underline">About</a>
+          <a href="#" class="block w-full hover:underline">Blog</a>
+          <a href="#" class="block w-full hover:underline">Careers</a>
+          <a href="#" class="block w-full hover:underline">Contact Us</a>
+          <a href="#" class="block w-full hover:underline">Events</a>
+          <a href="#" class="block w-full hover:underline">Newsfeed</a>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl">Resources</h2>
+          <a href="#" class="block w-full hover:underline">Community Forums</a>
+          <a href="#" class="block w-full hover:underline">Help Center</a>
+          <a href="#" class="block w-full hover:underline">Resource Center</a>
+          <a href="#" class="block w-full hover:underline"
+            >Password Generator</a
+          >
+          <a href="#" class="block w-full hover:underline"
+            >Password Strength Tester</a
+          >
+        </div>
+      </div>
+      <div class="my-8">
+        <p>
+          © Copyright 2021 Bitwarden, Inc. · Terms · Privacy · Cookie Settings ·
+          Credits · Sitemap
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
